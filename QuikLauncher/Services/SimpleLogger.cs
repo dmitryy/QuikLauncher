@@ -2,7 +2,7 @@
 
 namespace QuikLauncher
 {
-    public class ConsoleLog : ILog
+    public class SimpleLogger : ILogger
     {
         public void Log(string message)
         {

@@ -72,7 +72,9 @@ namespace QuikLauncher
 
             if (hwndReBarWindow32 != IntPtr.Zero)
             {
-                // TODO: this number of steps for particular quik install only! revisit this and refactor to find needed menu via loop
+                // Warning
+                // This is typically works for regular quik installation. 
+                // But for customized quik this logic should be updated with more or less lines.
 
                 hwnd = IntPtr.Zero;
                 firstChild = FindWindowEx(hwndReBarWindow32, hwnd, null, null);

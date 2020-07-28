@@ -1,6 +1,6 @@
 ﻿namespace QuikLauncher
 {
-    public interface ILog
+    public interface ILogger
     {
         void Log(string message);
     }

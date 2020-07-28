@@ -11,7 +11,7 @@ namespace QuikLauncherConsole
                 .AddSingleton<IConfigurationService, ConfigurationService>()
                 .AddSingleton<IQuikApplicationManager, QuikApplicationManager>()
                 .AddSingleton<IQuikLaunchService, QuikLaunchService>()
-                .AddSingleton<ILog, ConsoleLog>()
+                .AddSingleton<ILogger, SimpleLogger>()
                 .BuildServiceProvider();
         }
 

@@ -9,6 +9,7 @@ namespace QuikLauncherTests
     {
         private Mock<IConfigurationService> _configurationMock;
         private Mock<IQuikApplicationManager> _quikAppMock;
+        private Mock<ILogger> _loggerMock;
 
         private IQuikLaunchService service;
 
@@ -17,6 +18,7 @@ namespace QuikLauncherTests
         {
             _configurationMock = new Mock<IConfigurationService>();
             _quikAppMock = new Mock<IQuikApplicationManager>();
+            _loggerMock = new Mock<ILogger>();
 
             _configurationMock
                 .Setup(c => c.Delay)
@@ -24,7 +26,8 @@ namespace QuikLauncherTests
 
             service = new QuikLaunchService(
                 _configurationMock.Object,
-                _quikAppMock.Object);
+                _quikAppMock.Object,
+                _loggerMock.Object);
         }
 
         [Test]

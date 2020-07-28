@@ -11,6 +11,7 @@ namespace QuikLauncherConsole
                 .AddSingleton<IConfigurationService, ConfigurationService>()
                 .AddSingleton<IQuikApplicationManager, QuikApplicationManager>()
                 .AddSingleton<IQuikLaunchService, QuikLaunchService>()
+                .AddSingleton<ILog, ConsoleLog>()
                 .BuildServiceProvider();
         }
 
@@ -21,6 +22,8 @@ namespace QuikLauncherConsole
             var quikLauncher = provider.GetService<IQuikLaunchService>();
 
             quikLauncher.Run();
+
+            System.Console.ReadKey();
         }
     }
 }

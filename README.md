@@ -14,3 +14,5 @@
 
 3. **QUIK_PATH** - путь к файлу квика, он необходим для запуска квика, если он не запущен, а также для определения текущей версии квика. Например: C:\QUIK\info.exe
 
+Основную логику работы приложения можно посмотреть в файле
+https://github.com/dmitryy/QuikLauncher/blob/master/QuikLauncher/Services/QuikLaunchService.cs

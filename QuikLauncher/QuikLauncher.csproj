@@ -68,6 +68,8 @@
     <Compile Include="Services\IQuikLaunchService.cs" />
     <Compile Include="Services\QuikApplicationManager.cs" />
     <Compile Include="Services\QuikLaunchService.cs" />
+    <Compile Include="WindowHandleInfo.cs" />
+    <Compile Include="WindowManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
